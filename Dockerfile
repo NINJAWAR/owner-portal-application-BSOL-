@@ -17,4 +17,4 @@ COPY . .
 
 EXPOSE 4888
 
-CMD ["npm", "start"]
+CMD [ "node", "server.js" ]
