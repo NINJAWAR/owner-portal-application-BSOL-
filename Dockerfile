@@ -17,4 +17,4 @@ COPY . .
 
 EXPOSE 4888
 
-CMD [ "node", "start" ]
+CMD CMD ["npm", "serve", "--port 4888"]
