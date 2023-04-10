@@ -1,4 +1,4 @@
-FROM node:16.20
+FROM node.js 16.20.0
 
 WORKDIR /usr/src/app
 
