@@ -2,11 +2,11 @@ FROM node:16.20
 
 WORKDIR /usr/src/app
 
-COPY package*.json ./
+COPY package*.json /usr/src/app
 
-RUN npm install --force
+RUN npm install
 
-COPY . ./
+COPY . /usr/src/app
 
 EXPOSE 4888
 
