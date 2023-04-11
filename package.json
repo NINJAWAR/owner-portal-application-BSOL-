@@ -5,7 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "start": "set PORT=4888 && react-scripts start",
+    "start": "set PORT=4888 && react-scripts start --host 0.0.0.0",
     "build": "react-scripts build && gulp licenses",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
