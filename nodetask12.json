@@ -1,20 +1,20 @@
 {
-    "family": "nodetask",
+    "family": "nodetask12",
     "containerDefinitions": [
         {
-            "name": "nodec1",
+            "name": "nodecontainer1",
             "image": "014025535279.dkr.ecr.us-east-1.amazonaws.com/nodejs",
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "nodec1-80-tcp",
+                    "name": "nodecontainer1-80-tcp",
                     "containerPort": 80,
                     "hostPort": 80,
                     "protocol": "tcp",
                     "appProtocol": "http"
                 },
                 {
-                    "name": "nodec1-4888-tcp",
+                    "name": "nodecontainer1-4888-tcp",
                     "containerPort": 4888,
                     "hostPort": 4888,
                     "protocol": "tcp",
@@ -30,7 +30,7 @@
                 "logDriver": "awslogs",
                 "options": {
                     "awslogs-create-group": "true",
-                    "awslogs-group": "/ecs/nodetask",
+                    "awslogs-group": "/ecs/nodetask12",
                     "awslogs-region": "us-east-1",
                     "awslogs-stream-prefix": "ecs"
                 }
@@ -43,8 +43,8 @@
     "requiresCompatibilities": [
         "FARGATE"
     ],
-    "cpu": "2048",
-    "memory": "4096",
+    "cpu": "1024",
+    "memory": "2048",
     "runtimePlatform": {
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
