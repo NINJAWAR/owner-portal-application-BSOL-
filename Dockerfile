@@ -14,6 +14,8 @@ RUN npm install --f
 
 # Bundle app source
 COPY . .
+RUN export HOST=0.0.0.0 \
+    && export PORT=4888 
 
 EXPOSE 4888
 
